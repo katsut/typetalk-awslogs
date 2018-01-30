@@ -14,7 +14,7 @@
 [[projects]]
   branch = "master"
   name = "github.com/eawsy/aws-lambda-go-event"
-  packages = ["service/lambda/runtime/event/snsevt"]
+  packages = ["service/lambda/runtime/event/cloudwatchlogsevt"]
   revision = "e888a5ec6428554de39d49d6eda94f60027cfb81"
 
 [[projects]]
@@ -26,6 +26,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "098c4ce19a2717f4ccf9a8d919963faa4fe39c736e549fd557aba1c36f6b2b32"
+  inputs-digest = "36b19a4b82f69559a2ae624ab4eaa8cb35b64cff34a1d228567c28a5af815186"
   solver-name = "gps-cdcl"
   solver-version = 1

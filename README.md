@@ -1,4 +1,4 @@
-# Serverless Template for Golang
+# Send AWS CloudWatch Logs to Typetalk
 
 This repository contains template for creating serverless services written in Golang.
 
@@ -7,13 +7,16 @@ This repository contains template for creating serverless services written in Go
 1. Create a new service based on this template
 
 ```
-serverless create -u https://github.com/katsut/awslogs_typetalk/ -p awslogs_typetalk
+sls create -u https://github.com/katsut/typetalk-awslogs/ -p typetalk_awslogs
 ```
 
 2. Compile function
 
 ```
-cd awslogs_typetalk
+cd typetalk_awslogs
+
+dep ensure
+
 GOOS=linux go build -o bin/main
 ```
 
@@ -24,5 +27,5 @@ edit environment block in serverless.yml
 3. Deploy
 
 ```
-serverless deploy
+sls deploy
 ```
